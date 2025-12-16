@@ -16,15 +16,9 @@ export const metadata: Metadata = {
   title: "Combat Guide - Master Every Mechanic",
   description:
     "Complete combat guide for Netherworld Covenant. Learn dodging, parrying, Ethereal Dash, Ghost Step, Nether Lantern, and advanced techniques.",
-  keywords: [
-    "Netherworld Covenant combat",
-    "Netherworld Covenant dodge",
-    "Netherworld Covenant parry",
-    "Netherworld Covenant Ghost Step",
-    "Netherworld Covenant Ethereal Dash",
-    "how to fight Netherworld Covenant",
-    "Netherworld Covenant controls",
-  ],
+  alternates: {
+    canonical: "/guides/combat",
+  },
 };
 
 export default function CombatGuidePage() {

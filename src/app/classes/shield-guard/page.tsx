@@ -16,13 +16,9 @@ export const metadata: Metadata = {
   title: "Shield Guard Build Guide - Best Builds & Strategies",
   description:
     "Complete Shield Guard guide for Netherworld Covenant. Learn the best defensive builds, parry timing, and counter strategies.",
-  keywords: [
-    "Netherworld Covenant Shield Guard",
-    "Netherworld Covenant tank build",
-    "Netherworld Covenant shield build",
-    "best Shield Guard build",
-    "Shield Guard parry guide",
-  ],
+  alternates: {
+    canonical: "/classes/shield-guard",
+  },
 };
 
 export default function ShieldGuardGuide() {

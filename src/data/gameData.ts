@@ -18,11 +18,11 @@ export const STEAM_IMAGES = {
   hero: "https://cdn.akamai.steamstatic.com/steam/apps/2735580/library_hero.jpg",
   logo: "https://cdn.akamai.steamstatic.com/steam/apps/2735580/logo.png",
   screenshots: [
-    "https://cdn.akamai.steamstatic.com/steam/apps/2735580/ss_1.jpg",
-    "https://cdn.akamai.steamstatic.com/steam/apps/2735580/ss_2.jpg",
-    "https://cdn.akamai.steamstatic.com/steam/apps/2735580/ss_3.jpg",
-    "https://cdn.akamai.steamstatic.com/steam/apps/2735580/ss_4.jpg",
-    "https://cdn.akamai.steamstatic.com/steam/apps/2735580/ss_5.jpg",
+    "/images/screenshot-1.webp",
+    "/images/screenshot-2.webp",
+    "/images/screenshot-3.webp",
+    "/images/screenshot-4.webp",
+    "/images/screenshot-5.webp",
   ],
 };
 

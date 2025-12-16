@@ -19,13 +19,9 @@ export const metadata: Metadata = {
   title: "Useless Person Build Guide - Best Builds & Strategies",
   description:
     "Complete Useless Person guide for Netherworld Covenant. Master the ultimate challenge class with unlimited potential and adaptive playstyle.",
-  keywords: [
-    "Netherworld Covenant Useless Person",
-    "Netherworld Covenant challenge class",
-    "Netherworld Covenant hard mode",
-    "best Useless Person build",
-    "Useless Person guide",
-  ],
+  alternates: {
+    canonical: "/classes/useless-person",
+  },
 };
 
 export default function UselessPersonGuide() {

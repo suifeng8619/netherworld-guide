@@ -7,14 +7,9 @@ export const metadata: Metadata = {
   title: "Boss Guide - All Bosses & Strategies",
   description:
     "Complete boss guide for Netherworld Covenant. Learn strategies, attack patterns, and tips for defeating every boss across all six chapters.",
-  keywords: [
-    "Netherworld Covenant bosses",
-    "Netherworld Covenant boss guide",
-    "Netherworld Covenant boss strategies",
-    "how to beat bosses Netherworld Covenant",
-    "Netherworld Covenant final boss",
-    "Netherworld Covenant chapter bosses",
-  ],
+  alternates: {
+    canonical: "/bosses",
+  },
 };
 
 export default function BossesPage() {

@@ -15,15 +15,9 @@ export const metadata: Metadata = {
   title: "Class Guides - All Playable Classes",
   description:
     "Complete guides for all 5 playable classes in Netherworld Covenant: Berserker, Mage, Hunter, Shield Guard, and Useless Person. Find the best builds and strategies.",
-  keywords: [
-    "Netherworld Covenant classes",
-    "Netherworld Covenant builds",
-    "Netherworld Covenant berserker",
-    "Netherworld Covenant mage",
-    "Netherworld Covenant hunter",
-    "Netherworld Covenant shield guard",
-    "Netherworld Covenant useless person",
-  ],
+  alternates: {
+    canonical: "/classes",
+  },
 };
 
 const classIcons: Record<string, React.ReactNode> = {

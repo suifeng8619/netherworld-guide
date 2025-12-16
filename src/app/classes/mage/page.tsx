@@ -19,13 +19,9 @@ export const metadata: Metadata = {
   title: "Mage Build Guide - Best Builds & Strategies",
   description:
     "Complete Mage guide for Netherworld Covenant. Learn the best builds, spells, relics, and strategies for mastering the arcane arts.",
-  keywords: [
-    "Netherworld Covenant Mage",
-    "Netherworld Covenant Mage build",
-    "Netherworld Covenant spell build",
-    "best Mage build",
-    "Warm Flow mechanic",
-  ],
+  alternates: {
+    canonical: "/classes/mage",
+  },
 };
 
 export default function MageGuide() {

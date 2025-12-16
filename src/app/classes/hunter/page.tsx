@@ -17,13 +17,9 @@ export const metadata: Metadata = {
   title: "Hunter Build Guide - Best Builds & Strategies",
   description:
     "Complete Hunter guide for Netherworld Covenant. Learn the best builds, weapons, and kiting strategies for mastering the Hunter class.",
-  keywords: [
-    "Netherworld Covenant Hunter",
-    "Netherworld Covenant Hunter build",
-    "Netherworld Covenant bow build",
-    "best Hunter build",
-    "Hunter kiting guide",
-  ],
+  alternates: {
+    canonical: "/classes/hunter",
+  },
 };
 
 export default function HunterGuide() {

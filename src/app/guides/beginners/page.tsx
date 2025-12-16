@@ -22,13 +22,9 @@ export const metadata: Metadata = {
   title: "Beginner's Guide - Getting Started",
   description:
     "Complete beginner's guide for Netherworld Covenant. Learn combat basics, weapon choices, progression strategies, and essential tips to survive the netherworld.",
-  keywords: [
-    "Netherworld Covenant beginner guide",
-    "Netherworld Covenant tips",
-    "Netherworld Covenant how to play",
-    "Netherworld Covenant starter guide",
-    "Netherworld Covenant new player",
-  ],
+  alternates: {
+    canonical: "/guides/beginners",
+  },
 };
 
 export default function BeginnersGuide() {

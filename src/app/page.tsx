@@ -42,12 +42,12 @@ export default function Home() {
         {/* Background */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://cdn.akamai.steamstatic.com/steam/apps/2735580/header.jpg"
+            src="/images/hero-bg.webp"
             alt="Netherworld Covenant"
             fill
+            sizes="100vw"
             className="object-cover opacity-20"
             priority
-            unoptimized
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a12] via-[#0a0a12]/80 to-[#0a0a12]" />
         </div>
@@ -228,11 +228,12 @@ export default function Home() {
 
             <div className="relative aspect-video rounded-xl overflow-hidden border border-purple-900/30">
               <Image
-                src="https://cdn.akamai.steamstatic.com/steam/apps/2735580/ss_1.jpg"
+                src="/images/screenshot-1.webp"
                 alt="Netherworld Covenant Combat"
-                fill
+                width={1280}
+                height={720}
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
-                unoptimized
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a12] via-transparent to-transparent" />
             </div>

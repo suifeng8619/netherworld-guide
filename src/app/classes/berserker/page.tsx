@@ -18,13 +18,9 @@ export const metadata: Metadata = {
   title: "Berserker Build Guide - Best Builds & Strategies",
   description:
     "Complete Berserker guide for Netherworld Covenant. Learn the best builds, weapons, relics, and strategies for dominating as a Berserker.",
-  keywords: [
-    "Netherworld Covenant Berserker",
-    "Netherworld Covenant Berserker build",
-    "Netherworld Covenant Berserker guide",
-    "best Berserker build",
-    "Berserker lifesteal build",
-  ],
+  alternates: {
+    canonical: "/classes/berserker",
+  },
 };
 
 export default function BerserkerGuide() {

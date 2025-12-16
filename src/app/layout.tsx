@@ -12,18 +12,10 @@ export const metadata: Metadata = {
   },
   description:
     "The ultimate guide for Netherworld Covenant. Find the best builds, class guides, boss strategies, and tips for this action roguelike game.",
-  keywords: [
-    "Netherworld Covenant",
-    "Netherworld Covenant guide",
-    "Netherworld Covenant builds",
-    "Netherworld Covenant wiki",
-    "Netherworld Covenant classes",
-    "Netherworld Covenant boss",
-    "Netherworld Covenant tier list",
-    "action roguelike",
-    "soulslike roguelike",
-  ],
   authors: [{ name: "Netherworld Guide Team" }],
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -44,6 +36,20 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Netherworld Covenant Guide",
+  url: "https://netherworldcovenant.com",
+  description:
+    "The ultimate guide for Netherworld Covenant. Find the best builds, class guides, boss strategies, and tips for this action roguelike game.",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: "https://netherworldcovenant.com/?q={search_term_string}",
+    "query-input": "required name=search_term_string",
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -52,12 +58,21 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="dns-prefetch" href="//stats.toolifybox.com" />
+        <link rel="preconnect" href="https://stats.toolifybox.com" crossOrigin="anonymous" />
         <Script
           defer
           data-domain="netherworldcovenant.com"
           src="https://stats.toolifybox.com/js/script.file-downloads.outbound-links.js"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
+        <Script
+          id="json-ld"
+          type="application/ld+json"
+          strategy="beforeInteractive"
+        >
+          {JSON.stringify(jsonLd)}
+        </Script>
       </head>
       <body className="min-h-screen flex flex-col">
         <Navigation />
