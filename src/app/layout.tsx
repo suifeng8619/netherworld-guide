@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
@@ -50,6 +51,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          defer
+          data-domain="netherworldcovenant.com"
+          src="https://stats.toolifybox.com/js/script.file-downloads.outbound-links.js"
+          strategy="afterInteractive"
+        />
+      </head>
       <body className="min-h-screen flex flex-col">
         <Navigation />
         <main className="flex-1">{children}</main>
