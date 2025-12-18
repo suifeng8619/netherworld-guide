@@ -4,9 +4,27 @@ import Link from "next/link";
 import { useState } from "react";
 import { LanternIcon, MenuIcon, CloseIcon, ChevronRightIcon } from "@/components/icons/GameIcons";
 
-const navItems = [
+interface NavItem {
+  name: string;
+  href: string;
+  children?: { name: string; href: string }[];
+}
+
+const navItems: NavItem[] = [
   { name: "Home", href: "/" },
   { name: "Beginner's Guide", href: "/guides/beginners" },
+  {
+    name: "Guides",
+    href: "/guides",
+    children: [
+      { name: "Combat System", href: "/guides/combat" },
+      { name: "Weapons", href: "/guides/weapons" },
+      { name: "Companions", href: "/guides/companions" },
+      { name: "Tier List", href: "/guides/tier-list" },
+      { name: "Relics", href: "/guides/relics" },
+      { name: "Progression", href: "/guides/progression" },
+    ],
+  },
   {
     name: "Classes",
     href: "/classes",
@@ -18,13 +36,24 @@ const navItems = [
       { name: "Useless Person", href: "/classes/useless-person" },
     ],
   },
-  { name: "Combat", href: "/guides/combat" },
   { name: "Bosses", href: "/bosses" },
+  {
+    name: "Tools",
+    href: "/tools",
+    children: [
+      { name: "Build Calculator", href: "/tools/build-calculator" },
+      { name: "Damage Calculator", href: "/tools/damage-calculator" },
+      { name: "Build Share", href: "/tools/build-share" },
+      { name: "Class Finder", href: "/tools/class-finder" },
+      { name: "Random Build", href: "/tools/random-build" },
+      { name: "Compare Builds", href: "/tools/compare" },
+    ],
+  },
 ];
 
 export function Navigation() {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0a0a12]/95 backdrop-blur-md border-b border-purple-900/30">
@@ -52,13 +81,13 @@ export function Navigation() {
                 <div
                   key={item.name}
                   className="relative"
-                  onMouseEnter={() => setDropdownOpen(true)}
-                  onMouseLeave={() => setDropdownOpen(false)}
+                  onMouseEnter={() => setOpenDropdown(item.name)}
+                  onMouseLeave={() => setOpenDropdown(null)}
                 >
                   <button className="px-4 py-2 text-sm font-medium text-gray-300 hover:text-purple-400 transition-colors flex items-center gap-1">
                     {item.name}
                     <svg
-                      className={`w-4 h-4 transition-transform ${dropdownOpen ? "rotate-180" : ""}`}
+                      className={`w-4 h-4 transition-transform ${openDropdown === item.name ? "rotate-180" : ""}`}
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -66,13 +95,13 @@ export function Navigation() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
                   </button>
-                  {dropdownOpen && (
+                  {openDropdown === item.name && (
                     <div className="absolute top-full left-0 mt-1 w-48 py-2 bg-[#12121f] border border-purple-900/40 rounded-lg shadow-xl shadow-purple-900/20">
                       <Link
                         href={item.href}
                         className="block px-4 py-2 text-sm text-purple-400 hover:bg-purple-900/20 transition-colors font-medium"
                       >
-                        All Classes
+                        All {item.name}
                       </Link>
                       <div className="border-t border-purple-900/30 my-1" />
                       {item.children.map((child) => (

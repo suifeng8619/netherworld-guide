@@ -893,3 +893,532 @@ export const AURAS = [
     bestFor: ["High stamina regen builds", "AoE damage"],
   },
 ];
+
+// ============================================
+// TIER RATINGS - For Tier List Page
+// ============================================
+
+export const TIER_RATINGS = {
+  classes: {
+    "shield-guard": { tier: "S", reason: "Most forgiving for beginners, excellent survivability" },
+    "hunter": { tier: "A", reason: "Safe ranged playstyle, consistent damage output" },
+    "berserker": { tier: "A", reason: "High damage potential, good lifesteal sustain" },
+    "mage": { tier: "B", reason: "Highest burst but very fragile, requires mastery" },
+    "useless-person": { tier: "C", reason: "Challenge class, brutal early game but high ceiling" },
+  },
+  weapons: {
+    "greatsword": { tier: "S", reason: "Best stagger, wide arc, excellent crowd control" },
+    "staff": { tier: "S", reason: "Best range, spell synergy, mana efficient" },
+    "bow": { tier: "A", reason: "Safe ranged damage, good kiting potential" },
+    "double-bladed-axe": { tier: "A", reason: "Massive damage, great lifesteal synergy" },
+    "spear": { tier: "B", reason: "Good reach, but narrow hit arc" },
+    "short-sword": { tier: "B", reason: "Balanced but lacks specialization" },
+    "daggers": { tier: "B", reason: "Fast crits but very short range" },
+    "shield": { tier: "A", reason: "Essential for Shield Guard, parry potential" },
+  },
+  companions: {
+    "guardian": { tier: "S", reason: "Best for fragile classes, draws aggro effectively" },
+    "ranger": { tier: "A", reason: "Good ranged support, safe Ghost Step positioning" },
+    "swordsman": { tier: "B", reason: "Solid melee support, good all-around" },
+    "rogue": { tier: "B", reason: "High risk high reward, needs experienced players" },
+  },
+};
+
+// ============================================
+// RELICS - Equipment Items
+// ============================================
+
+export const RELICS = [
+  // S-Tier Relics
+  {
+    id: "soul-devourer",
+    name: "Soul Devourer",
+    rarity: "legendary",
+    effect: "Gain 5% lifesteal on all attacks. Stacks with class abilities.",
+    bestFor: ["Berserker", "Melee builds"],
+    tier: "S",
+    category: "offense",
+  },
+  {
+    id: "ethereal-cloak",
+    name: "Ethereal Cloak",
+    rarity: "legendary",
+    effect: "Ethereal Dash cooldown reduced by 40%. Gain 2 seconds of invulnerability after dashing.",
+    bestFor: ["All classes", "Survival builds"],
+    tier: "S",
+    category: "defense",
+  },
+  {
+    id: "nether-amplifier",
+    name: "Nether Amplifier",
+    rarity: "legendary",
+    effect: "Nether Lantern damage increased by 50%. Stagger damage doubled.",
+    bestFor: ["All classes", "Stagger builds"],
+    tier: "S",
+    category: "offense",
+  },
+  // A-Tier Relics
+  {
+    id: "critical-eye",
+    name: "Critical Eye",
+    rarity: "rare",
+    effect: "Critical hit chance increased by 15%. Critical damage increased by 25%.",
+    bestFor: ["Hunter", "Daggers build"],
+    tier: "A",
+    category: "offense",
+  },
+  {
+    id: "stamina-reservoir",
+    name: "Stamina Reservoir",
+    rarity: "rare",
+    effect: "Maximum stamina increased by 30%. Stamina regeneration increased by 20%.",
+    bestFor: ["Berserker", "Useless Person"],
+    tier: "A",
+    category: "utility",
+  },
+  {
+    id: "warm-flow-catalyst",
+    name: "Warm Flow Catalyst",
+    rarity: "rare",
+    effect: "Warm Flow stacks build 50% faster. Maximum stacks increased by 3.",
+    bestFor: ["Mage"],
+    tier: "A",
+    category: "offense",
+  },
+  {
+    id: "guardian-shield",
+    name: "Guardian's Shield",
+    rarity: "rare",
+    effect: "Block efficiency increased by 25%. Perfect parry window extended by 100ms.",
+    bestFor: ["Shield Guard"],
+    tier: "A",
+    category: "defense",
+  },
+  {
+    id: "swift-hunter",
+    name: "Swift Hunter",
+    rarity: "rare",
+    effect: "Movement speed increased by 15%. Attack speed increased by 10%.",
+    bestFor: ["Hunter", "Kiting builds"],
+    tier: "A",
+    category: "utility",
+  },
+  // B-Tier Relics
+  {
+    id: "health-crystal",
+    name: "Health Crystal",
+    rarity: "common",
+    effect: "Maximum HP increased by 20%.",
+    bestFor: ["All classes", "Beginners"],
+    tier: "B",
+    category: "defense",
+  },
+  {
+    id: "damage-sigil",
+    name: "Damage Sigil",
+    rarity: "common",
+    effect: "Base damage increased by 15%.",
+    bestFor: ["All classes"],
+    tier: "B",
+    category: "offense",
+  },
+  {
+    id: "mana-well",
+    name: "Mana Well",
+    rarity: "common",
+    effect: "Mana regeneration increased by 30%. Spell costs reduced by 10%.",
+    bestFor: ["Mage"],
+    tier: "B",
+    category: "utility",
+  },
+  {
+    id: "thorns-armor",
+    name: "Thorns Armor",
+    rarity: "common",
+    effect: "Reflect 20% of damage taken back to attackers.",
+    bestFor: ["Shield Guard", "Tank builds"],
+    tier: "B",
+    category: "defense",
+  },
+  {
+    id: "gold-magnet",
+    name: "Gold Magnet",
+    rarity: "common",
+    effect: "Gold pickup range increased. Gold drops increased by 20%.",
+    bestFor: ["All classes", "Farming runs"],
+    tier: "B",
+    category: "utility",
+  },
+  // C-Tier Relics
+  {
+    id: "minor-heal",
+    name: "Minor Healing Charm",
+    rarity: "common",
+    effect: "Regenerate 1 HP per second out of combat.",
+    bestFor: ["Beginners"],
+    tier: "C",
+    category: "defense",
+  },
+  {
+    id: "light-step",
+    name: "Light Step",
+    rarity: "common",
+    effect: "Dodge distance increased by 10%.",
+    bestFor: ["All classes"],
+    tier: "C",
+    category: "utility",
+  },
+];
+
+// ============================================
+// BOSS GUIDES - Detailed Boss Strategies
+// ============================================
+
+export const BOSS_GUIDES = {
+  "forgotten-knight": {
+    id: "forgotten-knight",
+    name: "The Forgotten Knight",
+    chapter: 1,
+    difficulty: 2,
+    description: "A fallen knight corrupted by the Netherworld's influence. Once a noble defender, now a relentless enemy.",
+    phases: [
+      {
+        name: "Phase 1 (100%-50% HP)",
+        description: "Basic sword combos and shield charges",
+        attacks: [
+          { name: "Three-Hit Combo", description: "Three consecutive sword slashes. Dodge after the second hit.", telegraph: "Raises sword high" },
+          { name: "Shield Charge", description: "Rushes forward with shield. Creates shockwave on impact.", telegraph: "Crouches and braces shield" },
+          { name: "Overhead Slam", description: "Heavy overhead attack. High damage but slow.", telegraph: "Two-handed grip, long windup" },
+        ],
+      },
+      {
+        name: "Phase 2 (Below 50% HP)",
+        description: "Becomes more aggressive, adds new attacks",
+        attacks: [
+          { name: "All Phase 1 attacks", description: "Faster execution", telegraph: "Same as Phase 1" },
+          { name: "Dark Wave", description: "Ranged shockwave attack. Jump or dodge through it.", telegraph: "Sword glows purple" },
+          { name: "Berserk Combo", description: "Five-hit combo ending with AoE slam.", telegraph: "Eyes glow red" },
+        ],
+      },
+    ],
+    tips: [
+      "Stay close to bait melee attacks, which have clearer telegraphs",
+      "Shield Charge can be parried for massive stagger damage",
+      "In Phase 2, don't get greedy - his combos are much longer",
+      "Use Ghost Step during Dark Wave for safe positioning",
+    ],
+    recommendedClasses: ["Shield Guard", "Berserker"],
+    recommendedCompanions: ["Guardian", "Swordsman"],
+  },
+  "the-butcher": {
+    id: "the-butcher",
+    name: "The Butcher",
+    chapter: 2,
+    difficulty: 3,
+    description: "A massive, cleaver-wielding horror from the corrupted village. Slow but devastating.",
+    phases: [
+      {
+        name: "Phase 1 (100%-60% HP)",
+        description: "Slow, telegraphed attacks with high damage",
+        attacks: [
+          { name: "Cleaver Slam", description: "Overhead slam creating shockwave. Dodge to the side.", telegraph: "Raises cleaver with both hands" },
+          { name: "Horizontal Sweep", description: "Wide horizontal slash. Jump or duck.", telegraph: "Pulls cleaver back to side" },
+          { name: "Grab Attack", description: "Grabs and throws player. Cannot be blocked.", telegraph: "Reaches out with free hand" },
+        ],
+      },
+      {
+        name: "Phase 2 (Below 60% HP)",
+        description: "Summons minions and becomes faster",
+        attacks: [
+          { name: "All Phase 1 attacks", description: "20% faster execution", telegraph: "Same as Phase 1" },
+          { name: "Summon Minions", description: "Spawns 3 corrupted villagers.", telegraph: "Slams ground and roars" },
+          { name: "Frenzy Mode", description: "Rapid consecutive slams. Find cover or stay far away.", telegraph: "Eyes turn completely red" },
+        ],
+      },
+    ],
+    tips: [
+      "His attacks are slow - you have time to land 2-3 hits after dodging",
+      "Kill minions quickly in Phase 2 before they overwhelm you",
+      "Ranged classes can kite him easily due to his slow movement",
+      "Grab attack ignores block - always dodge when you see his hand reach out",
+    ],
+    recommendedClasses: ["Hunter", "Mage"],
+    recommendedCompanions: ["Ranger", "Guardian"],
+  },
+  "drowned-god": {
+    id: "drowned-god",
+    name: "The Drowned God",
+    chapter: 3,
+    difficulty: 4,
+    description: "An eldritch horror from the deep. Uses water and tentacle attacks.",
+    phases: [
+      {
+        name: "Phase 1 (100%-70% HP)",
+        description: "Tentacle attacks and water hazards",
+        attacks: [
+          { name: "Tentacle Slam", description: "Multiple tentacles slam the arena. Watch for shadows.", telegraph: "Shadows appear on ground" },
+          { name: "Water Burst", description: "AoE water explosion at player location.", telegraph: "Water bubbles beneath feet" },
+          { name: "Ink Cloud", description: "Obscures vision temporarily.", telegraph: "Boss submerges briefly" },
+        ],
+      },
+      {
+        name: "Phase 2 (70%-30% HP)",
+        description: "Arena floods, movement restricted",
+        attacks: [
+          { name: "All Phase 1 attacks", description: "Increased frequency", telegraph: "Same as Phase 1" },
+          { name: "Whirlpool", description: "Creates pulling vortex. Dash away or be pulled in.", telegraph: "Water starts spinning" },
+          { name: "Tidal Wave", description: "Large wave crosses arena. Jump or use Ethereal Dash.", telegraph: "Water recedes before wave" },
+        ],
+      },
+      {
+        name: "Phase 3 (Below 30% HP)",
+        description: "Desperate attacks, tentacles everywhere",
+        attacks: [
+          { name: "All previous attacks", description: "Much faster", telegraph: "Same as before" },
+          { name: "Tentacle Storm", description: "Tentacles attack from all directions. Constant dodging required.", telegraph: "Boss screams" },
+          { name: "Death Grip", description: "Must button mash to escape or die.", telegraph: "Giant tentacle emerges" },
+        ],
+      },
+    ],
+    tips: [
+      "Movement speed is crucial - the flooded arena slows you down",
+      "Ghost Step is essential for escaping Whirlpool",
+      "Stay near arena edges in Phase 3 for easier tentacle avoidance",
+      "Bring ranged weapons - melee is risky due to tentacle attacks",
+    ],
+    recommendedClasses: ["Mage", "Hunter"],
+    recommendedCompanions: ["Guardian", "Ranger"],
+  },
+  "tower-master": {
+    id: "tower-master",
+    name: "The Tower Master",
+    chapter: 4,
+    difficulty: 5,
+    description: "A powerful sorcerer who commands dark magic. Uses projectiles and summons.",
+    phases: [
+      {
+        name: "Phase 1 (100%-50% HP)",
+        description: "Ranged spell attacks",
+        attacks: [
+          { name: "Magic Missiles", description: "Fires tracking projectiles. Can be dodged.", telegraph: "Hands glow with energy" },
+          { name: "Arcane Beam", description: "Sweeping laser beam. Jump over it.", telegraph: "Charges up with bright light" },
+          { name: "Teleport Strike", description: "Teleports behind and attacks.", telegraph: "Body flickers" },
+        ],
+      },
+      {
+        name: "Phase 2 (Below 50% HP)",
+        description: "Summons constructs and uses more spells",
+        attacks: [
+          { name: "All Phase 1 attacks", description: "Faster casting", telegraph: "Same as Phase 1" },
+          { name: "Summon Constructs", description: "Spawns 2 arcane constructs.", telegraph: "Creates magic circles" },
+          { name: "Meteor Rain", description: "Meteors fall across arena. Keep moving.", telegraph: "Sky darkens" },
+          { name: "Time Slow Field", description: "Creates zone that slows player.", telegraph: "Purple dome appears" },
+        ],
+      },
+    ],
+    tips: [
+      "Interrupt his spells with Nether Lantern when possible",
+      "Destroy constructs immediately - they heal him",
+      "Stay mobile during Meteor Rain - don't try to fight",
+      "Melee classes should rush him and stay aggressive to prevent casting",
+    ],
+    recommendedClasses: ["Berserker", "Shield Guard"],
+    recommendedCompanions: ["Swordsman", "Rogue"],
+  },
+  "chaos-before-creation": {
+    id: "chaos-before-creation",
+    name: "Chaos Before Creation",
+    chapter: 5,
+    difficulty: 6,
+    description: "A primordial demon from before time. Reality warps around it.",
+    phases: [
+      {
+        name: "Phase 1 (100%-60% HP)",
+        description: "Reality-warping attacks",
+        attacks: [
+          { name: "Void Slash", description: "Tears reality, creating damaging rifts.", telegraph: "Claw motion in air" },
+          { name: "Dimensional Shift", description: "Swaps positions with player.", telegraph: "Eyes flash" },
+          { name: "Chaos Orbs", description: "Slow-moving orbs that explode.", telegraph: "Hands create spheres" },
+        ],
+      },
+      {
+        name: "Phase 2 (60%-30% HP)",
+        description: "Arena transforms, gravity shifts",
+        attacks: [
+          { name: "All Phase 1 attacks", description: "Enhanced versions", telegraph: "Same as Phase 1" },
+          { name: "Gravity Reverse", description: "Briefly inverts gravity.", telegraph: "Purple glow on ground" },
+          { name: "Clone Split", description: "Creates 2 clones. Find the real one.", telegraph: "Body splits apart" },
+          { name: "Void Prison", description: "Traps player. Break free or take massive damage.", telegraph: "Circle appears under player" },
+        ],
+      },
+      {
+        name: "Phase 3 (Below 30% HP)",
+        description: "Full chaos mode",
+        attacks: [
+          { name: "All previous attacks", description: "Simultaneous attacks possible", telegraph: "Same as before" },
+          { name: "Reality Collapse", description: "Arena shrinks temporarily.", telegraph: "Edges glow and contract" },
+          { name: "Final Chaos", description: "Bullet hell attack. Constant dodging.", telegraph: "Boss transforms" },
+        ],
+      },
+    ],
+    tips: [
+      "Learn to identify the real boss from clones - slightly different color",
+      "Save Ethereal Dash for Void Prison escape",
+      "During Gravity Reverse, attacks still work normally",
+      "In Phase 3, prioritize survival over damage",
+    ],
+    recommendedClasses: ["Hunter", "Shield Guard"],
+    recommendedCompanions: ["Guardian", "Ranger"],
+  },
+  "final-covenant": {
+    id: "final-covenant",
+    name: "The Final Covenant",
+    chapter: 6,
+    difficulty: 7,
+    description: "The ultimate evil awaiting in the Void. Master of all elements and dimensions.",
+    phases: [
+      {
+        name: "Phase 1 (100%-75% HP)",
+        description: "Tests player with elemental attacks",
+        attacks: [
+          { name: "Elemental Cycle", description: "Rotates through fire, ice, lightning attacks.", telegraph: "Aura color changes" },
+          { name: "Void Tendrils", description: "Tendrils attack from portals.", telegraph: "Portals open around arena" },
+          { name: "Soul Drain", description: "Channeled attack. Must interrupt or take heavy damage.", telegraph: "Purple beam from hands" },
+        ],
+      },
+      {
+        name: "Phase 2 (75%-40% HP)",
+        description: "Combines elements, summons minions",
+        attacks: [
+          { name: "All Phase 1 attacks", description: "Can combine elements", telegraph: "Multiple aura colors" },
+          { name: "Summon Echoes", description: "Summons echoes of previous bosses.", telegraph: "Roars and creates portals" },
+          { name: "Dimensional Rift", description: "Creates damaging zones across arena.", telegraph: "Space tears apart" },
+        ],
+      },
+      {
+        name: "Phase 3 (40%-15% HP)",
+        description: "Desperation attacks",
+        attacks: [
+          { name: "All previous attacks", description: "Much faster, more aggressive", telegraph: "Same as before" },
+          { name: "Covenant's Wrath", description: "Screen-wide attack. Must use cover.", telegraph: "Charges up for 3 seconds" },
+          { name: "Time Stop", description: "Freezes player briefly.", telegraph: "Clock sound" },
+        ],
+      },
+      {
+        name: "Final Phase (Below 15% HP)",
+        description: "True form revealed",
+        attacks: [
+          { name: "All attacks combined", description: "No safe moments", telegraph: "Constant" },
+          { name: "Final Reckoning", description: "Enrage - must kill quickly or wipe.", telegraph: "HP bar turns red" },
+        ],
+      },
+    ],
+    tips: [
+      "This is a marathon, not a sprint - preserve resources for later phases",
+      "Kill Echo summons quickly - they use their original boss attacks",
+      "During Covenant's Wrath, hide behind the pillars that spawn",
+      "In Final Phase, go all-out - you have limited time before enrage",
+      "Bring your best build and practice all previous bosses first",
+    ],
+    recommendedClasses: ["Shield Guard", "Hunter"],
+    recommendedCompanions: ["Guardian", "Ranger"],
+  },
+};
+
+// ============================================
+// CLASS FINDER QUESTIONS - For Quiz Tool
+// ============================================
+
+export const CLASS_FINDER_QUESTIONS = [
+  {
+    id: "playstyle",
+    question: "What's your preferred combat style?",
+    options: [
+      { label: "Get in their face and deal massive damage", scores: { berserker: 3, "shield-guard": 1, mage: 0, hunter: 0, "useless-person": 2 } },
+      { label: "Keep my distance and attack safely", scores: { berserker: 0, "shield-guard": 0, mage: 3, hunter: 3, "useless-person": 1 } },
+      { label: "Block attacks and counter-attack", scores: { berserker: 1, "shield-guard": 3, mage: 0, hunter: 0, "useless-person": 1 } },
+      { label: "Adapt to whatever the situation requires", scores: { berserker: 1, "shield-guard": 1, mage: 1, hunter: 1, "useless-person": 3 } },
+    ],
+  },
+  {
+    id: "difficulty",
+    question: "How much challenge do you want?",
+    options: [
+      { label: "I'm new to roguelikes - go easy on me", scores: { berserker: 1, "shield-guard": 3, mage: 0, hunter: 2, "useless-person": 0 } },
+      { label: "Moderate challenge is fine", scores: { berserker: 3, "shield-guard": 2, mage: 1, hunter: 3, "useless-person": 1 } },
+      { label: "I want to be tested", scores: { berserker: 2, "shield-guard": 1, mage: 3, hunter: 2, "useless-person": 2 } },
+      { label: "Give me the hardest option", scores: { berserker: 1, "shield-guard": 0, mage: 2, hunter: 1, "useless-person": 3 } },
+    ],
+  },
+  {
+    id: "survival",
+    question: "How do you prefer to survive?",
+    options: [
+      { label: "High defense and blocking", scores: { berserker: 0, "shield-guard": 3, mage: 0, hunter: 1, "useless-person": 1 } },
+      { label: "Lifesteal and sustain through damage", scores: { berserker: 3, "shield-guard": 1, mage: 0, hunter: 0, "useless-person": 2 } },
+      { label: "Don't get hit in the first place", scores: { berserker: 0, "shield-guard": 0, mage: 2, hunter: 3, "useless-person": 2 } },
+      { label: "Kill enemies before they kill me", scores: { berserker: 2, "shield-guard": 0, mage: 3, hunter: 2, "useless-person": 1 } },
+    ],
+  },
+  {
+    id: "mistakes",
+    question: "How do you handle making mistakes?",
+    options: [
+      { label: "I need forgiveness for errors", scores: { berserker: 1, "shield-guard": 3, mage: 0, hunter: 2, "useless-person": 0 } },
+      { label: "I can recover from occasional mistakes", scores: { berserker: 3, "shield-guard": 2, mage: 1, hunter: 3, "useless-person": 1 } },
+      { label: "I rarely make mistakes", scores: { berserker: 2, "shield-guard": 1, mage: 3, hunter: 2, "useless-person": 2 } },
+      { label: "One mistake = restart (I'm masochistic)", scores: { berserker: 0, "shield-guard": 0, mage: 2, hunter: 1, "useless-person": 3 } },
+    ],
+  },
+  {
+    id: "weapons",
+    question: "What weapon type appeals to you?",
+    options: [
+      { label: "Big, heavy weapons with wide swings", scores: { berserker: 3, "shield-guard": 2, mage: 0, hunter: 0, "useless-person": 2 } },
+      { label: "Magic staffs and spells", scores: { berserker: 0, "shield-guard": 0, mage: 3, hunter: 0, "useless-person": 1 } },
+      { label: "Bows or ranged weapons", scores: { berserker: 0, "shield-guard": 0, mage: 1, hunter: 3, "useless-person": 1 } },
+      { label: "Shield and sword combo", scores: { berserker: 0, "shield-guard": 3, mage: 0, hunter: 0, "useless-person": 1 } },
+      { label: "Whatever I find - I'm flexible", scores: { berserker: 1, "shield-guard": 1, mage: 1, hunter: 1, "useless-person": 3 } },
+    ],
+  },
+  {
+    id: "soulslike",
+    question: "Have you played Soulslike games before?",
+    options: [
+      { label: "Never played any", scores: { berserker: 1, "shield-guard": 3, mage: 0, hunter: 2, "useless-person": 0 } },
+      { label: "Played a few, somewhat experienced", scores: { berserker: 2, "shield-guard": 2, mage: 2, hunter: 2, "useless-person": 1 } },
+      { label: "I've beaten multiple Souls games", scores: { berserker: 3, "shield-guard": 1, mage: 3, hunter: 2, "useless-person": 2 } },
+      { label: "I do challenge runs for fun", scores: { berserker: 2, "shield-guard": 0, mage: 2, hunter: 1, "useless-person": 3 } },
+    ],
+  },
+];
+
+// ============================================
+// BUILD CALCULATOR DATA - Stats and Bonuses
+// ============================================
+
+export const BUILD_CALCULATOR_DATA = {
+  baseStats: {
+    berserker: { hp: 100, stamina: 100, damage: 15, defense: 5, critChance: 10, critDamage: 150, attackSpeed: 1.0, moveSpeed: 100 },
+    mage: { hp: 70, stamina: 80, damage: 20, defense: 3, critChance: 5, critDamage: 150, attackSpeed: 0.8, moveSpeed: 95, mana: 100 },
+    hunter: { hp: 85, stamina: 110, damage: 12, defense: 4, critChance: 15, critDamage: 175, attackSpeed: 1.2, moveSpeed: 115 },
+    "shield-guard": { hp: 120, stamina: 90, damage: 10, defense: 10, critChance: 5, critDamage: 150, attackSpeed: 0.9, moveSpeed: 90, blockEfficiency: 50 },
+    "useless-person": { hp: 80, stamina: 120, damage: 8, defense: 4, critChance: 10, critDamage: 150, attackSpeed: 1.0, moveSpeed: 100 },
+  },
+  weaponBonuses: {
+    "short-sword": { damage: 5, attackSpeed: 0.2 },
+    "greatsword": { damage: 15, attackSpeed: -0.3, stagger: 20 },
+    "daggers": { damage: 3, attackSpeed: 0.5, critChance: 10 },
+    "double-bladed-axe": { damage: 18, attackSpeed: -0.2, lifesteal: 3 },
+    "staff": { damage: 8, spellDamage: 25, manaRegen: 20 },
+    "bow": { damage: 10, range: 30, critChance: 5 },
+    "spear": { damage: 8, range: 15, attackSpeed: 0.1 },
+    "shield": { defense: 10, blockEfficiency: 25, counterDamage: 10 },
+  },
+  companionBonuses: {
+    "swordsman": { damage: 5, stagger: 5 },
+    "ranger": { damage: 3, critChance: 3 },
+    "guardian": { defense: 5, hp: 15 },
+    "rogue": { critChance: 5, critDamage: 25 },
+  },
+};
