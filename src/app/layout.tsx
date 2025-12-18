@@ -60,11 +60,13 @@ export default function RootLayout({
       <head>
         <link rel="dns-prefetch" href="//stats.toolifybox.com" />
         <link rel="preconnect" href="https://stats.toolifybox.com" crossOrigin="anonymous" />
+      </head>
+      <body className="min-h-screen flex flex-col">
         <Script
           defer
           data-domain="netherworldcovenant.com"
           src="https://stats.toolifybox.com/js/script.file-downloads.outbound-links.js"
-          strategy="lazyOnload"
+          strategy="afterInteractive"
         />
         <Script
           id="json-ld"
@@ -73,8 +75,6 @@ export default function RootLayout({
         >
           {JSON.stringify(jsonLd)}
         </Script>
-      </head>
-      <body className="min-h-screen flex flex-col">
         <Navigation />
         <main className="flex-1">{children}</main>
         <Footer />
