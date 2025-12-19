@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { StarIcon, SwordIcon, ShieldIcon, UserIcon } from "@/components/icons/GameIcons";
 import { CLASSES, WEAPONS, SOUL_COMPANIONS, TIER_RATINGS } from "@/data/gameData";
+import { ResourceLinks } from "@/components/ui/ResourceLinks";
 
 export const metadata: Metadata = {
   title: "Tier List - Best Classes, Weapons & Companions",
@@ -257,6 +258,9 @@ export default function TierListPage() {
             </p>
           </div>
         </section>
+
+        {/* Community Resources */}
+        <ResourceLinks className="mt-12" />
       </div>
     </div>
   );

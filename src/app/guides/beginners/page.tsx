@@ -17,6 +17,7 @@ import {
   BookIcon,
 } from "@/components/icons/GameIcons";
 import { WEAPONS, SOUL_COMPANIONS, PROGRESSION_SYSTEM } from "@/data/gameData";
+import { ResourceLinks } from "@/components/ui/ResourceLinks";
 
 export const metadata: Metadata = {
   title: "Beginner's Guide - Getting Started",
@@ -337,6 +338,9 @@ export default function BeginnersGuide() {
             )}
           </div>
         </div>
+
+        {/* Community Resources */}
+        <ResourceLinks className="mt-8" />
       </div>
     </div>
   );

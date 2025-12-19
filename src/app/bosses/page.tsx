@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { SkullIcon, WarningIcon, ChevronRightIcon, ShieldIcon, LightningIcon } from "@/components/icons/GameIcons";
 import { CHAPTERS } from "@/data/gameData";
+import { ResourceLinks } from "@/components/ui/ResourceLinks";
 
 export const metadata: Metadata = {
   title: "Boss Guide - All Bosses & Strategies",
@@ -195,6 +196,9 @@ export default function BossesPage() {
             </div>
           </div>
         </section>
+
+        {/* Community Resources */}
+        <ResourceLinks className="mt-12" />
       </div>
     </div>
   );

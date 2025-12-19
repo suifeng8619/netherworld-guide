@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { ShieldIcon, ChevronRightIcon, StarIcon, GhostIcon } from "@/components/icons/GameIcons";
 import { SOUL_COMPANIONS, TIER_RATINGS } from "@/data/gameData";
+import { ResourceLinks } from "@/components/ui/ResourceLinks";
 
 export const metadata: Metadata = {
   title: "Soul Companion Guide - Ghost Step & Abilities",
@@ -257,6 +258,9 @@ export default function CompanionsPage() {
             ))}
           </div>
         </section>
+
+        {/* Community Resources */}
+        <ResourceLinks className="mt-12" />
       </div>
     </div>
   );

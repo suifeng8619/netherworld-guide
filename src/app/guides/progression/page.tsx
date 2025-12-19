@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { ChevronRightIcon, GemIcon, StarIcon, LightningIcon } from "@/components/icons/GameIcons";
 import { PROGRESSION_SYSTEM } from "@/data/gameData";
+import { ResourceLinks } from "@/components/ui/ResourceLinks";
 
 export const metadata: Metadata = {
   title: "Progression Guide - Currencies, Upgrades & Tips",
@@ -287,6 +288,9 @@ export default function ProgressionPage() {
             </div>
           </div>
         </section>
+
+        {/* Community Resources */}
+        <ResourceLinks className="mt-12" />
       </div>
     </div>
   );

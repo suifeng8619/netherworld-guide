@@ -11,6 +11,7 @@ import {
   TargetIcon,
 } from "@/components/icons/GameIcons";
 import { COMBAT_MECHANICS, WEAPONS } from "@/data/gameData";
+import { ResourceLinks } from "@/components/ui/ResourceLinks";
 
 export const metadata: Metadata = {
   title: "Combat Guide - Master Every Mechanic",
@@ -238,6 +239,9 @@ export default function CombatGuidePage() {
             </div>
           </div>
         </section>
+
+        {/* Community Resources */}
+        <ResourceLinks className="mb-8" />
 
         {/* Navigation */}
         <div className="flex flex-col sm:flex-row justify-between gap-4">

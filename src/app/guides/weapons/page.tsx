@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { SwordIcon, ChevronRightIcon, StarIcon } from "@/components/icons/GameIcons";
 import { WEAPONS, TIER_RATINGS } from "@/data/gameData";
+import { ResourceLinks } from "@/components/ui/ResourceLinks";
 
 export const metadata: Metadata = {
   title: "Weapon Guide - All Weapons & Best Builds",
@@ -261,6 +262,9 @@ export default function WeaponsPage() {
             ))}
           </div>
         </section>
+
+        {/* Community Resources */}
+        <ResourceLinks className="mt-12" />
       </div>
     </div>
   );

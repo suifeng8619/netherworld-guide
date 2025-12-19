@@ -77,10 +77,10 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Resources */}
+          {/* Official Resources */}
           <div>
             <h3 className="text-sm font-semibold text-gray-300 uppercase tracking-wider mb-4">
-              Resources
+              Official Resources
             </h3>
             <ul className="space-y-2">
               <li>
@@ -90,17 +90,47 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className="text-sm text-gray-500 hover:text-purple-400 transition-colors flex items-center gap-1"
                 >
-                  Steam Page <ExternalLinkIcon size={12} />
+                  Steam Store <ExternalLinkIcon size={12} />
                 </a>
               </li>
               <li>
                 <a
-                  href="https://steamcommunity.com/app/2735580"
+                  href="https://steamcommunity.com/app/2735580/discussions/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-gray-500 hover:text-purple-400 transition-colors flex items-center gap-1"
                 >
-                  Steam Community <ExternalLinkIcon size={12} />
+                  Steam Discussions <ExternalLinkIcon size={12} />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://steamcommunity.com/app/2735580/guides/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-gray-500 hover:text-purple-400 transition-colors flex items-center gap-1"
+                >
+                  Steam Guides <ExternalLinkIcon size={12} />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/results?search_query=netherworld+covenant+guide"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-gray-500 hover:text-purple-400 transition-colors flex items-center gap-1"
+                >
+                  YouTube Guides <ExternalLinkIcon size={12} />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.reddit.com/search/?q=netherworld%20covenant"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-gray-500 hover:text-purple-400 transition-colors flex items-center gap-1"
+                >
+                  Reddit Discussions <ExternalLinkIcon size={12} />
                 </a>
               </li>
             </ul>

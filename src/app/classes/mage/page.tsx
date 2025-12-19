@@ -14,6 +14,7 @@ import {
   GhostIcon,
 } from "@/components/icons/GameIcons";
 import { CLASSES, WEAPONS } from "@/data/gameData";
+import { ResourceLinks } from "@/components/ui/ResourceLinks";
 
 export const metadata: Metadata = {
   title: "Mage Build Guide - Best Builds & Strategies",
@@ -297,8 +298,11 @@ export default function MageGuide() {
           </section>
         </article>
 
+        {/* Community Resources */}
+        <ResourceLinks className="mt-12" />
+
         {/* Navigation */}
-        <div className="mt-12 flex justify-between">
+        <div className="mt-8 flex justify-between">
           <Link href="/classes/berserker" className="px-4 py-2 text-gray-400 hover:text-purple-400 transition-colors flex items-center gap-1">
             <ChevronRightIcon size={16} className="rotate-180" /> Berserker
           </Link>
