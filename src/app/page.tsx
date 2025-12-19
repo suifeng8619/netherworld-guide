@@ -16,6 +16,12 @@ import {
   TargetIcon,
   GemIcon,
   LanternIcon,
+  CalculatorIcon,
+  DiceIcon,
+  CompareIcon,
+  ShareIcon,
+  QuestionIcon,
+  ChartIcon,
 } from "@/components/icons/GameIcons";
 import { CLASSES, SOUL_COMPANIONS, GAME_MODES, CHAPTERS } from "@/data/gameData";
 
@@ -93,12 +99,14 @@ export default function Home() {
       {/* Quick Links */}
       <section className="py-12 border-y border-purple-900/30">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
             {[
               { icon: <BookIcon size={24} />, title: "Beginner's Guide", desc: "Start here", href: "/guides/beginners", color: "text-blue-400" },
               { icon: <LightningIcon size={24} />, title: "Combat Guide", desc: "Master mechanics", href: "/guides/combat", color: "text-yellow-400" },
               { icon: <CrossedSwordsIcon size={24} />, title: "Class Builds", desc: "Optimized setups", href: "/classes", color: "text-red-400" },
               { icon: <SkullIcon size={24} />, title: "Boss Strategies", desc: "Defeat every boss", href: "/bosses", color: "text-purple-400" },
+              { icon: <ChartIcon size={24} />, title: "Tier List", desc: "Best picks", href: "/guides/tier-list", color: "text-amber-400" },
+              { icon: <CalculatorIcon size={24} />, title: "Build Tools", desc: "Plan & share", href: "/tools/build-calculator", color: "text-green-400" },
             ].map((link) => (
               <Link
                 key={link.title}
@@ -106,10 +114,10 @@ export default function Home() {
                 className="group p-4 sm:p-6 bg-[#12121f] hover:bg-[#1a1a2e] border border-purple-900/30 rounded-xl transition-all hover:border-purple-700/50"
               >
                 <div className={`${link.color} mb-3`}>{link.icon}</div>
-                <h3 className="font-bold text-gray-200 group-hover:text-white transition-colors">
+                <h3 className="font-bold text-gray-200 group-hover:text-white transition-colors text-sm sm:text-base">
                   {link.title}
                 </h3>
-                <p className="text-sm text-gray-400">{link.desc}</p>
+                <p className="text-xs sm:text-sm text-gray-400">{link.desc}</p>
               </Link>
             ))}
           </div>
@@ -278,8 +286,93 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Chapters */}
+      {/* Tools Section */}
       <section className="py-16 sm:py-24 bg-gradient-to-b from-[#0a0a12] via-[#12121f] to-[#0a0a12]">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-black text-gray-100 mb-4">
+              Build <span className="text-purple-400">Tools</span>
+            </h2>
+            <p className="text-gray-400 max-w-2xl mx-auto">
+              Interactive tools to plan, optimize, and share your builds.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                icon: <CalculatorIcon size={28} />,
+                title: "Build Calculator",
+                desc: "Create builds and see real-time stats with radar charts",
+                href: "/tools/build-calculator",
+                color: "from-blue-600 to-cyan-600",
+                iconColor: "text-blue-400",
+              },
+              {
+                icon: <ChartIcon size={28} />,
+                title: "Damage Calculator",
+                desc: "Simulate DPS, critical hits, and damage breakdowns",
+                href: "/tools/damage-calculator",
+                color: "from-red-600 to-orange-600",
+                iconColor: "text-red-400",
+              },
+              {
+                icon: <CompareIcon size={28} />,
+                title: "Compare Builds",
+                desc: "Side-by-side comparison of two different builds",
+                href: "/tools/compare",
+                color: "from-orange-600 to-amber-600",
+                iconColor: "text-orange-400",
+              },
+              {
+                icon: <QuestionIcon size={28} />,
+                title: "Class Finder",
+                desc: "Answer questions to find your perfect class",
+                href: "/tools/class-finder",
+                color: "from-purple-600 to-pink-600",
+                iconColor: "text-purple-400",
+              },
+              {
+                icon: <DiceIcon size={28} />,
+                title: "Random Build",
+                desc: "Generate random builds for fun challenges",
+                href: "/tools/random-build",
+                color: "from-green-600 to-emerald-600",
+                iconColor: "text-green-400",
+              },
+              {
+                icon: <ShareIcon size={28} />,
+                title: "Build Share",
+                desc: "Share builds via link, QR code, or image export",
+                href: "/tools/build-share",
+                color: "from-violet-600 to-purple-600",
+                iconColor: "text-violet-400",
+              },
+            ].map((tool) => (
+              <Link
+                key={tool.title}
+                href={tool.href}
+                className="group p-6 bg-[#12121f] border border-purple-900/30 rounded-xl transition-all hover:border-purple-700/50 hover:shadow-lg hover:shadow-purple-900/20"
+              >
+                <div className={`w-14 h-14 bg-gradient-to-br ${tool.color} rounded-xl flex items-center justify-center mb-4 text-white group-hover:scale-110 transition-transform`}>
+                  {tool.icon}
+                </div>
+                <h3 className="text-lg font-bold text-gray-100 mb-2 group-hover:text-purple-400 transition-colors">
+                  {tool.title}
+                </h3>
+                <p className="text-sm text-gray-400 mb-4">{tool.desc}</p>
+                <div className="flex items-center text-sm text-purple-400 group-hover:text-purple-300">
+                  Try Now
+                  <ChevronRightIcon size={16} className="ml-1 group-hover:translate-x-1 transition-transform" />
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Chapters */}
+      <section className="py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-black text-gray-100 mb-4">
