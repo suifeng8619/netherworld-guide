@@ -124,6 +124,91 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Tools Section */}
+      <section className="py-16 sm:py-24 bg-gradient-to-b from-[#0a0a12] via-[#12121f] to-[#0a0a12]">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-black text-gray-100 mb-4">
+              Build <span className="text-purple-400">Tools</span>
+            </h2>
+            <p className="text-gray-400 max-w-2xl mx-auto">
+              Interactive tools to plan, optimize, and share your builds.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                icon: <CalculatorIcon size={28} />,
+                title: "Build Calculator",
+                desc: "Create builds and see real-time stats with radar charts",
+                href: "/tools/build-calculator",
+                color: "from-blue-600 to-cyan-600",
+                iconColor: "text-blue-400",
+              },
+              {
+                icon: <ChartIcon size={28} />,
+                title: "Damage Calculator",
+                desc: "Simulate DPS, critical hits, and damage breakdowns",
+                href: "/tools/damage-calculator",
+                color: "from-red-600 to-orange-600",
+                iconColor: "text-red-400",
+              },
+              {
+                icon: <CompareIcon size={28} />,
+                title: "Compare Builds",
+                desc: "Side-by-side comparison of two different builds",
+                href: "/tools/compare",
+                color: "from-orange-600 to-amber-600",
+                iconColor: "text-orange-400",
+              },
+              {
+                icon: <QuestionIcon size={28} />,
+                title: "Class Finder",
+                desc: "Answer questions to find your perfect class",
+                href: "/tools/class-finder",
+                color: "from-purple-600 to-pink-600",
+                iconColor: "text-purple-400",
+              },
+              {
+                icon: <DiceIcon size={28} />,
+                title: "Random Build",
+                desc: "Generate random builds for fun challenges",
+                href: "/tools/random-build",
+                color: "from-green-600 to-emerald-600",
+                iconColor: "text-green-400",
+              },
+              {
+                icon: <ShareIcon size={28} />,
+                title: "Build Share",
+                desc: "Share builds via link, QR code, or image export",
+                href: "/tools/build-share",
+                color: "from-violet-600 to-purple-600",
+                iconColor: "text-violet-400",
+              },
+            ].map((tool) => (
+              <Link
+                key={tool.title}
+                href={tool.href}
+                className="group p-6 bg-[#12121f] border border-purple-900/30 rounded-xl transition-all hover:border-purple-700/50 hover:shadow-lg hover:shadow-purple-900/20"
+              >
+                <div className={`w-14 h-14 bg-gradient-to-br ${tool.color} rounded-xl flex items-center justify-center mb-4 text-white group-hover:scale-110 transition-transform`}>
+                  {tool.icon}
+                </div>
+                <h3 className="text-lg font-bold text-gray-100 mb-2 group-hover:text-purple-400 transition-colors">
+                  {tool.title}
+                </h3>
+                <p className="text-sm text-gray-400 mb-4">{tool.desc}</p>
+                <div className="flex items-center text-sm text-purple-400 group-hover:text-purple-300">
+                  Try Now
+                  <ChevronRightIcon size={16} className="ml-1 group-hover:translate-x-1 transition-transform" />
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Classes Section */}
       <section className="py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4">
@@ -281,91 +366,6 @@ export default function Home() {
                   Best for: <span className="text-purple-400">{companion.bestFor.slice(0, 2).join(", ")}</span>
                 </div>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Tools Section */}
-      <section className="py-16 sm:py-24 bg-gradient-to-b from-[#0a0a12] via-[#12121f] to-[#0a0a12]">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-black text-gray-100 mb-4">
-              Build <span className="text-purple-400">Tools</span>
-            </h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">
-              Interactive tools to plan, optimize, and share your builds.
-            </p>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              {
-                icon: <CalculatorIcon size={28} />,
-                title: "Build Calculator",
-                desc: "Create builds and see real-time stats with radar charts",
-                href: "/tools/build-calculator",
-                color: "from-blue-600 to-cyan-600",
-                iconColor: "text-blue-400",
-              },
-              {
-                icon: <ChartIcon size={28} />,
-                title: "Damage Calculator",
-                desc: "Simulate DPS, critical hits, and damage breakdowns",
-                href: "/tools/damage-calculator",
-                color: "from-red-600 to-orange-600",
-                iconColor: "text-red-400",
-              },
-              {
-                icon: <CompareIcon size={28} />,
-                title: "Compare Builds",
-                desc: "Side-by-side comparison of two different builds",
-                href: "/tools/compare",
-                color: "from-orange-600 to-amber-600",
-                iconColor: "text-orange-400",
-              },
-              {
-                icon: <QuestionIcon size={28} />,
-                title: "Class Finder",
-                desc: "Answer questions to find your perfect class",
-                href: "/tools/class-finder",
-                color: "from-purple-600 to-pink-600",
-                iconColor: "text-purple-400",
-              },
-              {
-                icon: <DiceIcon size={28} />,
-                title: "Random Build",
-                desc: "Generate random builds for fun challenges",
-                href: "/tools/random-build",
-                color: "from-green-600 to-emerald-600",
-                iconColor: "text-green-400",
-              },
-              {
-                icon: <ShareIcon size={28} />,
-                title: "Build Share",
-                desc: "Share builds via link, QR code, or image export",
-                href: "/tools/build-share",
-                color: "from-violet-600 to-purple-600",
-                iconColor: "text-violet-400",
-              },
-            ].map((tool) => (
-              <Link
-                key={tool.title}
-                href={tool.href}
-                className="group p-6 bg-[#12121f] border border-purple-900/30 rounded-xl transition-all hover:border-purple-700/50 hover:shadow-lg hover:shadow-purple-900/20"
-              >
-                <div className={`w-14 h-14 bg-gradient-to-br ${tool.color} rounded-xl flex items-center justify-center mb-4 text-white group-hover:scale-110 transition-transform`}>
-                  {tool.icon}
-                </div>
-                <h3 className="text-lg font-bold text-gray-100 mb-2 group-hover:text-purple-400 transition-colors">
-                  {tool.title}
-                </h3>
-                <p className="text-sm text-gray-400 mb-4">{tool.desc}</p>
-                <div className="flex items-center text-sm text-purple-400 group-hover:text-purple-300">
-                  Try Now
-                  <ChevronRightIcon size={16} className="ml-1 group-hover:translate-x-1 transition-transform" />
-                </div>
-              </Link>
             ))}
           </div>
         </div>
