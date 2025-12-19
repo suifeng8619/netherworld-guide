@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { SkullIcon, WarningIcon, ChevronRightIcon, ShieldIcon, LightningIcon } from "@/components/icons/GameIcons";
 import { CHAPTERS } from "@/data/gameData";
 import { ResourceLinks } from "@/components/ui/ResourceLinks";
@@ -39,6 +40,18 @@ export default function BossesPage() {
             requires different strategies and mastery of game mechanics.
           </p>
         </header>
+
+        {/* Boss Screenshot */}
+        <div className="relative aspect-video max-w-3xl rounded-xl overflow-hidden border border-red-900/30 mb-12">
+          <Image
+            src="/images/screenshot-2.webp"
+            alt="Boss Fight in Netherworld Covenant"
+            fill
+            sizes="(max-width: 768px) 100vw, 800px"
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a12] via-transparent to-transparent" />
+        </div>
 
         {/* General Boss Tips */}
         <section className="mb-16">

@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import {
   SwordIcon,
   CrossedSwordsIcon,
@@ -93,6 +94,19 @@ export default function BeginnersGuide() {
               <SwordIcon size={28} className="text-red-400" />
               Combat Basics
             </h2>
+
+            {/* Combat Screenshot */}
+            <div className="relative aspect-video rounded-xl overflow-hidden border border-purple-900/30 mb-6">
+              <Image
+                src="/images/screenshot-4.webp"
+                alt="Netherworld Covenant Combat"
+                fill
+                sizes="(max-width: 768px) 100vw, 800px"
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a12] via-transparent to-transparent" />
+            </div>
+
             <div className="space-y-4 text-gray-400 leading-relaxed">
               <p>
                 <strong className="text-gray-200">Netherworld Covenant</strong> emphasizes

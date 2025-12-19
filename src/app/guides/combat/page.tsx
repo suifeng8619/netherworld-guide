@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import {
   SwordIcon,
   ShieldIcon,
@@ -49,6 +50,28 @@ export default function CombatGuidePage() {
             parrying, and the unique movement abilities to survive against overwhelming odds.
           </p>
         </header>
+
+        {/* Combat Screenshot */}
+        <div className="grid sm:grid-cols-2 gap-4 mb-12">
+          <div className="relative aspect-video rounded-xl overflow-hidden border border-purple-900/30">
+            <Image
+              src="/images/screenshot-1.webp"
+              alt="Combat in Netherworld Covenant"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover"
+            />
+          </div>
+          <div className="relative aspect-video rounded-xl overflow-hidden border border-purple-900/30">
+            <Image
+              src="/images/screenshot-3.webp"
+              alt="Advanced Combat Mechanics"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover"
+            />
+          </div>
+        </div>
 
         {/* Basic Actions */}
         <section className="mb-16">

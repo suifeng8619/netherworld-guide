@@ -460,6 +460,50 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Game Screenshots */}
+      <section className="py-16 sm:py-24 bg-[#12121f]">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-black text-gray-100 mb-4">
+              <span className="text-purple-400">Game</span> Screenshots
+            </h2>
+            <p className="text-gray-400 max-w-2xl mx-auto">
+              Experience the dark beauty of the Netherworld through stunning visuals.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              { src: "/images/screenshot-2.webp", alt: "Boss Fight" },
+              { src: "/images/screenshot-3.webp", alt: "Dungeon Exploration" },
+              { src: "/images/screenshot-4.webp", alt: "Combat Mechanics" },
+              { src: "/images/screenshot-5.webp", alt: "Character Skills" },
+              { src: "/images/screenshot-1.webp", alt: "Netherworld Environment" },
+            ].map((screenshot, i) => (
+              <div
+                key={i}
+                className={`relative aspect-video rounded-xl overflow-hidden border border-purple-900/30 group ${
+                  i === 4 ? "sm:col-span-2 lg:col-span-1" : ""
+                }`}
+              >
+                <Image
+                  src={screenshot.src}
+                  alt={screenshot.alt}
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a12]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                  <div className="absolute bottom-3 left-3 text-white text-sm font-medium">
+                    {screenshot.alt}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-16 sm:py-24 bg-gradient-to-b from-[#12121f] to-[#0a0a12]">
         <div className="max-w-4xl mx-auto px-4 text-center">
