@@ -52,7 +52,7 @@ export default function ShieldGuardGuide() {
             </div>
           </div>
           <p className="text-xl text-gray-400 leading-relaxed">
-            A stalwart defender who excels at blocking and counterattacking.
+            The Netherworld Covenant Shield Guard is a stalwart defender who excels at blocking and counterattacking.
             The most forgiving class for new players, with powerful defensive tools.
           </p>
         </header>

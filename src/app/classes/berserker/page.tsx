@@ -54,7 +54,7 @@ export default function BerserkerGuide() {
             </div>
           </div>
           <p className="text-xl text-gray-400 leading-relaxed">
-            A devastating melee fighter who trades defense for overwhelming offense.
+            The Netherworld Covenant Berserker is a devastating melee fighter who trades defense for overwhelming offense.
             Master the art of controlled aggression and sustain through combat.
           </p>
         </header>

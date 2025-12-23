@@ -54,7 +54,7 @@ export default function BeginnersGuide() {
             Beginner&apos;s Guide
           </h1>
           <p className="text-xl text-gray-400 leading-relaxed">
-            Everything you need to know to start your journey through the netherworld.
+            Everything you need to know to start your Netherworld Covenant journey.
             Master combat basics, choose your weapons, and learn essential survival strategies.
           </p>
         </header>
@@ -204,8 +204,8 @@ export default function BeginnersGuide() {
               Soul Companions
             </h2>
             <p className="text-gray-400 mb-6">
-              Soul Companions are fallen allies whose spirits fight alongside you. Each offers
-              unique abilities and combat strategies. Think of them as both allies and tools.
+              In Netherworld Covenant, Soul Companions are fallen allies whose spirits fight alongside you.
+              Each offers unique abilities and combat strategies. Think of them as both allies and tools.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-4">
@@ -336,7 +336,7 @@ export default function BeginnersGuide() {
         <div className="mt-12 p-6 bg-gradient-to-r from-purple-900/20 to-violet-900/20 border border-purple-700/30 rounded-xl">
           <h3 className="text-xl font-bold text-gray-100 mb-4">Next Steps</h3>
           <p className="text-gray-400 mb-6">
-            Now that you understand the basics, dive deeper into specific class guides:
+            Now that you understand the Netherworld Covenant basics, dive deeper into specific class guides:
           </p>
           <div className="flex flex-wrap gap-3">
             {["Berserker", "Mage", "Hunter", "Shield Guard", "Useless Person"].map(

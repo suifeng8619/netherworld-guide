@@ -41,11 +41,11 @@ export default function TierListPage() {
             <StarIcon size={48} className="text-yellow-500" />
             <div>
               <h1 className="text-4xl sm:text-5xl font-black text-gray-100">Tier List</h1>
-              <p className="text-gray-500">Find the best builds for your playstyle</p>
+              <p className="text-gray-500">Netherworld Covenant best builds for your playstyle</p>
             </div>
           </div>
           <p className="text-xl text-gray-400 leading-relaxed max-w-3xl">
-            Our tier rankings are based on overall effectiveness, ease of use, and viability
+            Our Netherworld Covenant tier rankings are based on overall effectiveness, ease of use, and viability
             in both early game and endgame content. S-tier options are top performers, while
             lower tiers are still viable with proper execution.
           </p>

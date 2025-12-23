@@ -53,7 +53,7 @@ export default function ClassesPage() {
             Class <span className="text-purple-400">Guides</span>
           </h1>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Master one of five unique classes, each with distinct playstyles,
+            Netherworld Covenant features five unique classes, each with distinct playstyles,
             strengths, and build possibilities.
           </p>
         </header>
@@ -173,12 +173,12 @@ export default function ClassesPage() {
           </h3>
           <div className="grid sm:grid-cols-2 gap-4 text-sm text-gray-400">
             <div>
-              <strong className="text-gray-200">New Players:</strong> Start with
+              <strong className="text-gray-200">New to Netherworld Covenant?</strong> Start with
               Shield Guard for a forgiving experience, or Berserker if you prefer
               aggressive combat.
             </div>
             <div>
-              <strong className="text-gray-200">Veterans:</strong> Challenge
+              <strong className="text-gray-200">Netherworld Covenant Veterans:</strong> Challenge
               yourself with Useless Person for the ultimate test of skill.
             </div>
           </div>

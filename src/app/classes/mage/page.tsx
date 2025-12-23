@@ -55,7 +55,7 @@ export default function MageGuide() {
             </div>
           </div>
           <p className="text-xl text-gray-400 leading-relaxed">
-            A powerful spellcaster who controls the battlefield from range.
+            The Netherworld Covenant Mage is a powerful spellcaster who controls the battlefield from range.
             Master spell rotations and positioning to unleash devastating arcane power.
           </p>
         </header>

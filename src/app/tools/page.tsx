@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 const tools = [
   {
     title: "Build Calculator",
-    description: "Create builds and see real-time stats with interactive radar charts. Combine class, weapon, companion, and relics.",
+    description: "Create Netherworld Covenant builds and see real-time stats with interactive radar charts.",
     href: "/tools/build-calculator",
     icon: <CalculatorIcon size={28} />,
     color: "from-blue-600 to-cyan-600",
@@ -94,7 +94,7 @@ export default function ToolsPage() {
             </div>
           </div>
           <p className="text-xl text-gray-400 leading-relaxed max-w-3xl">
-            Interactive tools to help you create the perfect build. Calculate stats, compare options,
+            Interactive Netherworld Covenant tools to help you create the perfect build. Calculate stats, compare options,
             find your ideal class, and share your creations with the community.
           </p>
         </header>

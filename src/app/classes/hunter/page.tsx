@@ -53,7 +53,7 @@ export default function HunterGuide() {
             </div>
           </div>
           <p className="text-xl text-gray-400 leading-relaxed">
-            An agile ranged fighter specializing in mobility and precision.
+            The Netherworld Covenant Hunter is an agile ranged fighter specializing in mobility and precision.
             Master the art of kiting to deal consistent damage while staying safe.
           </p>
         </header>

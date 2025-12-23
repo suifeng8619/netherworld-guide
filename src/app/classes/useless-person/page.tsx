@@ -55,7 +55,7 @@ export default function UselessPersonGuide() {
             </div>
           </div>
           <p className="text-xl text-gray-400 leading-relaxed">
-            The ultimate challenge class. Starts with nothing but has unlimited potential.
+            The Netherworld Covenant Useless Person is the ultimate challenge class. Starts with nothing but has unlimited potential.
             For players who have mastered the game and seek the ultimate test.
           </p>
         </header>

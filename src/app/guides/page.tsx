@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 const guides = [
   {
     title: "Beginner's Guide",
-    description: "Everything you need to know to start your journey through the netherworld.",
+    description: "Everything you need to start your Netherworld Covenant journey.",
     href: "/guides/beginners",
     icon: <BookIcon size={28} />,
     color: "text-blue-400",
@@ -95,7 +95,7 @@ export default function GuidesPage() {
             <BookIcon size={48} className="text-purple-500" />
             <div>
               <h1 className="text-4xl sm:text-5xl font-black text-gray-100">All Guides</h1>
-              <p className="text-gray-500">Everything you need to master the Netherworld</p>
+              <p className="text-gray-500">Everything you need to master Netherworld Covenant</p>
             </div>
           </div>
           <p className="text-xl text-gray-400 leading-relaxed max-w-3xl">

@@ -31,11 +31,11 @@ export default function BossesPage() {
             <SkullIcon size={48} className="text-red-500" />
             <div>
               <h1 className="text-4xl sm:text-5xl font-black text-gray-100">Boss Guide</h1>
-              <p className="text-gray-500">Conquer every challenge the Netherworld throws at you</p>
+              <p className="text-gray-500">Conquer every challenge Netherworld Covenant throws at you</p>
             </div>
           </div>
           <p className="text-xl text-gray-400 leading-relaxed max-w-3xl">
-            Face bosses twisted by malevolent soul energy—fallen lords, once-noble knights,
+            Netherworld Covenant bosses are twisted by malevolent soul energy—fallen lords, once-noble knights,
             primordial demons, and entities lurking in the dimensional void. Each boss
             requires different strategies and mastery of game mechanics.
           </p>
@@ -185,7 +185,7 @@ export default function BossesPage() {
               <div>
                 <h2 className="text-xl font-bold text-red-400 mb-2">Boss Rush Mode</h2>
                 <p className="text-gray-400 mb-4">
-                  Unlocked after completing Chapter 4, Boss Rush mode lets you fight all bosses
+                  Unlocked after completing Chapter 4, Netherworld Covenant&apos;s Boss Rush mode lets you fight all bosses
                   back-to-back with limited healing between fights. This is the ultimate test
                   of your boss-fighting skills.
                 </p>
