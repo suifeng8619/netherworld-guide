@@ -88,7 +88,7 @@ export default function Home() {
             </h1>
 
             <p className="text-lg sm:text-xl text-gray-400 mb-8 max-w-2xl leading-relaxed">
-              Master the dark fantasy roguelike with comprehensive guides, optimized builds,
+              Master Netherworld Covenant with comprehensive guides, optimized builds,
               combat strategies, and boss walkthroughs. From beginner tips to endgame content.
             </p>
 
@@ -232,7 +232,7 @@ export default function Home() {
               Choose Your <span className="text-purple-400">Class</span>
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
-              Master one of five unique classes, each with distinct playstyles, strengths, and strategies.
+              Netherworld Covenant offers five unique classes, each with distinct playstyles, strengths, and strategies.
             </p>
           </div>
 
@@ -301,9 +301,9 @@ export default function Home() {
               <h2 className="text-3xl sm:text-4xl font-black text-gray-100 mb-6">
                 Master the <span className="text-purple-400">Combat</span>
               </h2>
-              <p className="text-gray-400 mb-8 leading-relaxed">
-                Precision-based combat where timing and positioning matter more than button mashing.
-                Master these core mechanics to survive the Netherworld.
+            <p className="text-gray-400 mb-8 leading-relaxed">
+                Netherworld Covenant features precision-based combat where timing and positioning matter more than button mashing.
+                Master these core mechanics to survive.
               </p>
 
               <div className="space-y-4">
@@ -357,7 +357,7 @@ export default function Home() {
               <span className="text-purple-400">Soul</span> Companions
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
-              Forge pacts with fallen allies. Each companion offers unique abilities for combat.
+              Forge pacts with fallen allies in Netherworld Covenant. Each companion offers unique abilities for combat.
             </p>
           </div>
 
@@ -394,7 +394,7 @@ export default function Home() {
               Six <span className="text-purple-400">Chapters</span> of Challenge
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
-              Journey through dark dungeons, corrupted villages, and dimensional voids.
+              Netherworld Covenant takes you through dark dungeons, corrupted villages, and dimensional voids.
             </p>
           </div>
 
@@ -450,7 +450,7 @@ export default function Home() {
               Game <span className="text-purple-400">Modes</span>
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
-              From standard runs to hardcore challenges, test your skills across multiple modes.
+              Netherworld Covenant offers multiple modes, from standard runs to hardcore challenges.
             </p>
           </div>
 
@@ -483,7 +483,7 @@ export default function Home() {
               <span className="text-purple-400">Game</span> Screenshots
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
-              Experience the dark beauty of the Netherworld through stunning visuals.
+              Experience the dark beauty of Netherworld Covenant through stunning visuals.
             </p>
           </div>
 
@@ -523,10 +523,10 @@ export default function Home() {
       <section className="py-16 sm:py-24 bg-gradient-to-b from-[#12121f] to-[#0a0a12]">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl sm:text-4xl font-black text-gray-100 mb-4">
-            Ready to Conquer the <span className="text-purple-400">Netherworld</span>?
+            Ready to Master <span className="text-purple-400">Netherworld Covenant</span>?
           </h2>
           <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
-            Start with our beginner&apos;s guide and work your way up to mastering the most challenging content.
+            Start with our Netherworld Covenant beginner&apos;s guide and work your way up to mastering the endgame.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
