@@ -5,7 +5,7 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://netherworldcovenant.com"),
+  metadataBase: new URL("https://www.netherworldcovenant.com"),
   title: {
     default: "Netherworld Covenant Guide - Builds, Classes & Boss Strategies",
     template: "%s | Netherworld Covenant Guide",
@@ -40,12 +40,12 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Netherworld Covenant Guide",
-  url: "https://netherworldcovenant.com",
+  url: "https://www.netherworldcovenant.com",
   description:
     "The ultimate guide for Netherworld Covenant. Find the best builds, class guides, boss strategies, and tips for this action roguelike game.",
   potentialAction: {
     "@type": "SearchAction",
-    target: "https://netherworldcovenant.com/?q={search_term_string}",
+    target: "https://www.netherworldcovenant.com/?q={search_term_string}",
     "query-input": "required name=search_term_string",
   },
 };

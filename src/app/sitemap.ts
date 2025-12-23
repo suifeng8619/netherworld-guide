@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { BOSS_GUIDES } from "@/data/gameData";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://netherworldcovenant.com";
+  const baseUrl = "https://www.netherworldcovenant.com";
 
   const staticPages = [
     {

@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/", "/_next/"],
     },
-    sitemap: "https://netherworldcovenant.com/sitemap.xml",
+    sitemap: "https://www.netherworldcovenant.com/sitemap.xml",
   };
 }
