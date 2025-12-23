@@ -147,7 +147,7 @@ export default function Home() {
               Build <span className="text-purple-400">Tools</span>
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
-              Interactive tools to plan, optimize, and share your builds.
+              Interactive tools to plan, optimize, and share your Netherworld Covenant builds.
             </p>
           </div>
 
@@ -156,7 +156,7 @@ export default function Home() {
               {
                 icon: <CalculatorIcon size={28} />,
                 title: "Build Calculator",
-                desc: "Create builds and see real-time stats with radar charts",
+                desc: "Create Netherworld Covenant builds and see real-time stats with radar charts",
                 href: "/tools/build-calculator",
                 color: "from-blue-600 to-cyan-600",
                 iconColor: "text-blue-400",
@@ -172,7 +172,7 @@ export default function Home() {
               {
                 icon: <CompareIcon size={28} />,
                 title: "Compare Builds",
-                desc: "Side-by-side comparison of two different builds",
+                desc: "Compare Netherworld Covenant builds side-by-side",
                 href: "/tools/compare",
                 color: "from-orange-600 to-amber-600",
                 iconColor: "text-orange-400",
@@ -180,7 +180,7 @@ export default function Home() {
               {
                 icon: <QuestionIcon size={28} />,
                 title: "Class Finder",
-                desc: "Answer questions to find your perfect class",
+                desc: "Find your perfect Netherworld Covenant class",
                 href: "/tools/class-finder",
                 color: "from-purple-600 to-pink-600",
                 iconColor: "text-purple-400",
@@ -489,11 +489,11 @@ export default function Home() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
-              { src: "/images/screenshot-2.webp", alt: "Boss Fight" },
-              { src: "/images/screenshot-3.webp", alt: "Dungeon Exploration" },
-              { src: "/images/screenshot-4.webp", alt: "Combat Mechanics" },
-              { src: "/images/screenshot-5.webp", alt: "Character Skills" },
-              { src: "/images/screenshot-1.webp", alt: "Netherworld Environment" },
+              { src: "/images/screenshot-2.webp", alt: "Netherworld Covenant Boss Fight" },
+              { src: "/images/screenshot-3.webp", alt: "Netherworld Covenant Dungeon" },
+              { src: "/images/screenshot-4.webp", alt: "Netherworld Covenant Combat" },
+              { src: "/images/screenshot-5.webp", alt: "Netherworld Covenant Skills" },
+              { src: "/images/screenshot-1.webp", alt: "Netherworld Covenant Environment" },
             ].map((screenshot, i) => (
               <div
                 key={i}
