@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import {
@@ -24,6 +25,20 @@ import {
   ChartIcon,
 } from "@/components/icons/GameIcons";
 import { CLASSES, SOUL_COMPANIONS, GAME_MODES, CHAPTERS } from "@/data/gameData";
+
+export const metadata: Metadata = {
+  title: "Netherworld Covenant Guide - Builds, Classes & Boss Strategies",
+  description:
+    "The ultimate guide for Netherworld Covenant. Find the best builds, class guides, boss strategies, and tips for this action roguelike game.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Netherworld Covenant Guide - Builds, Classes & Boss Strategies",
+    description:
+      "The ultimate guide for Netherworld Covenant. Find the best builds, class guides, boss strategies, and tips.",
+  },
+};
 
 const classIcons: Record<string, React.ReactNode> = {
   berserker: <CrossedSwordsIcon size={28} className="text-red-400" />,
